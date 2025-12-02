@@ -1,0 +1,121 @@
+<!-- AT 6th finsih web page assignment-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>piercings</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: rgb(216, 205, 255);
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(56, 54, 155);
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #first {
+            text-align: center;
+            border: solid 5px rgb(38, 27, 141);
+            border-radius: 4px;
+            background-color: rgb(226, 214, 243);
+            padding: 15px;
+            box-shadow: 10px 20px rgba(47, 42, 53, 0.575);
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        #hover-img {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        #hover-img:hover {
+            opacity: 1;
+        }
+
+ 
+        #extra-info {
+            display: none;
+            background-color: rgb(226, 214, 243);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: rgb(93, 77, 201);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(69, 57, 160);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="first">Body piercings</h1>
+
+    <div class="content-section full-width">
+        <h2>Piercings are often used to express culture or self expression through the variety, along with the different method of them.</h2>
+        <p>A majority of body piercings have originated from ancient origins and different cultures. Piercings back then were more used for pure aesthetics because a lot of those cultures liked the look of the gold and silver. Body piercings have been part of human culture for thousands of years which serve various symbols through religion and aesthetic purposes. As time has gone on the view of piercings has also changed — it is no longer seen as deviance or rebellion or some sort of symbol. They are more seen as a way to self‑express yourself further and show individuality.</p>
+    </div>
+
+    <div class="content-section">
+        <h2 class="full-width">As piercings have developed so have the methods and range of piercings</h2>
+        <img src="https://cdn.shopify.com/s/files/1/0025/7196/0438/files/Shasta-9.jpg?v=1759504690" alt="Image of an ear with lots of jewelry">
+        <p>As we have been able to learn more about piercings throughout the years their methods and supplies have also advanced. As we have went from using tools like bone needles we have then begun to penetrate the skin as we then evolved to autoclaving with sterile supplies. As piercings have grown more they became more popular in the 1970's as we were able to gain access to piercing guns and hollow needles with all sterile equipment. Overall the piercing equipment has changed a lot over the years but that has also caused the expansion of types of piercings and a wider range for more methods.</p>
+    </div>
+
+    <h2>nose piercings</h2>
+    <a href="https://bodyartforms.com/products.asp?jewelry=septum&srsltid=AfmBOorNXLTfjrpfDn2WaXv1Thx9AkwiP_zc6wJV65LG82FgEn79ApvK" target="_blank"></a>
+
+    <ul>
+        <li>septum piercings</li>
+        <li>nostril piercings</li>
+        <li>rhino piercings</li>
+        <li>nostril gauges piercings</li>
+        <li>bridge piercings</li>
+    </ul>
+
+    <img id="hover-img" src="https://cdn.prod.website-files.com/61ce73519eba121f1f149ad0/64519691c5e44672c5de5b20_8.png" alt="image of ring in nose" height="200px">
+
+    
+    <button onclick="toggleInfo()">Show / Hide Extra Info</button>
+    <div id="extra-info">
+        <p> Overall piercings are pentrated fresh wounds to the body so they do often require aftercare which is saline soultion that people will use to clean their piearcings around 2 to 3 times a day till it heals. </p>
+        <img src="https://clubtattoo.com/cdn/shop/products/NielmedAFtercare_x269@2x.png?v=1585819344S" alt="extra piercing image" width="200px">
+    </div>
+
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById("extra-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
