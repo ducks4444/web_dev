@@ -1,0 +1,114 @@
+<!--AT 6th final staycation assignment-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>saint george</title>
+    <meta charset="UTF-8">
+    <style>
+        
+        body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; 
+        background-image: linear-gradient(to right, #e2c3b1, #ac776c); 
+        background-repeat: no-repeat; 
+        }
+
+        #first {
+            text-align: center;
+            border: solid 5px rgb(90, 41, 56);
+            border-radius: 4px;
+            background-color: rgb(233, 196, 196);
+            padding: 15px;
+            box-shadow: 10px 20px rgba(44, 34, 21, 0.575);
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+       
+        #hover-img {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        #hover-img:hover {
+            opacity: 1;
+        }
+
+ 
+        #extra-info {
+            display: none;
+            background-color: rgb(83, 48, 54);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: rgb(141, 99, 94);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(141, 120, 102);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="first">Saint George</h1>
+
+    <div class="content-section full-width">
+        <h2>Saint George is a red rock wonder known for its ecological beatuy</h2>
+        <p>Saint george is known for its beatufiul nature and national parks. Saint George is the pathway to some of the most breathtaking national parks that are refered as the "mighty five", zion, arches, canyonlands, bryce, and capitol reef. As a lot of these national parks are known for being stunning red-rock landscapes that offer diverse hiking trails and geological wonders.</p>
+        <img src="https://images.squarespace-cdn.com/content/v1/678a5051b551fa36f173823f/4812ed2e-fd81-4a1c-b9aa-1f9388f2ea09/rock-city.jpg" alt="image of springs in saint george">
+    </div>
+
+    <h2>Why you should stay in saint george</h2>
+    <a href="https://capitolreefresort.com/wp-content/uploads/2021/06/Arches-National-Park-stock-750x375.jpg"></a>
+
+    <ul>
+        <li>1. Saint George has scenic natural beatuy with numerous outdoor recreational oppurtunites</li>
+        <li>2. Saint George porvides nearby resavoirs like Sand Hollow and Quail creek which offer boating, swimming, and fishing.</li>
+        <li>3. Saint George had a mild climate which makes it possible to enjoy outdoor activites throughout the whole year so its free to visit whenever.</li>
+        <li>4. Saint george provides lots of different fmaily friendly activites and a welcoming community to seek out.</li>
+        <li>5. Saint George has many historcal sights and that doenst just include the national parks but it has musems that help learn about its past and art and such on display. </li>
+    </ul>
+
+    <img id="hover-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ796VzTEOFaCb7_pSFMNl1WC1PL_fevQqvyg&s" alt="image of arches national park" height="200px">
+
+    
+    <button onclick="toggleInfo()">Show / Hide Extra Info</button>
+    <div id="extra-info">
+        <p> St. Geroge is known for being a major film stop for film productions, and is the brithplace of the musical group the piano guys. Since st.george has diverse and dramtic landscapes with a mild climate it has become quite a popular film area. Along with this spot allows year round filming so its always avalible. </p>
+        <img src="https://capitolreefresort.com/wp-content/uploads/2021/06/Canyonlands-NP-Mesa-Arch-750x375.jpg" alt="picture of zions" width="200px">
+    </div>
+
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById("extra-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
